@@ -1,0 +1,51 @@
+.videoFooter {
+  position: relative;
+  bottom: 150px;
+  color: black;
+  display: flex;
+  padding: 20px 20px;
+}
+
+.videoFooter__text {
+  flex: 1;
+}
+
+.videoFooter__text > h3 {
+  padding-bottom: 10px;
+}
+
+/* Act like no element but displays actually */
+.videoFooter__icon {
+  position: absolute;
+}
+
+/* .ticker is the classname which already created by react-ticker official */
+.videoFooter__iconTicker > .ticker {
+  margin-top: 7px;
+  height: fit-content;
+  margin-left: 30px;
+  width: 60%;
+}
+/* I just added this for refference */
+.videoFooter__iconTicker {
+  display: flex;
+}
+.videoFooter__disk {
+  animation: spinTheDisk infinite 5s linear;
+  height: 50px;
+  /* filter: invert(1); */ /* Invert the color black  to white */
+  position: absolute;
+  bottom: 0px; /* bottom starts with zero */
+  right: 20px; /* right side starts with zero */
+  /* padding-right: 20px; */ /* Give awesome rotate style */
+}
+
+/* we can have any name in keyframes like spinTheDisk to aBC */
+@keyframes spinTheDisk {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

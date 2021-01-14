@@ -1,0 +1,12 @@
+.videoSidebar {
+  position: absolute;
+  top: 61%;
+  color: black;
+  right: 0px;
+  /* background-color: #ffffff; */ /* To Give a Instagram Style Lokk */
+}
+
+.videoSidebar__options {
+  padding: 20px 20px 20px 0px;
+  text-align: center;
+}
